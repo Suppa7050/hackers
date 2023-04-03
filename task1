@@ -2,6 +2,5 @@ echo  "Welcome to project school 2.o" > file1.txt
 
 echo "Cyber security session" >> file1.txt
 
-nslookup google.com
 
-echo "142.250.183.14" >> file1.txt
+echo $(nslookup -q=A google.com | grep -Eo '[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+') >> file1.txt
