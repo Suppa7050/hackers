@@ -4,3 +4,4 @@ echo "Cyber security session" >> file1.txt
 
 nslookup google.com
 
+echo "142.250.183.14" >> file1.txt
